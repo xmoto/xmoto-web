@@ -3,13 +3,14 @@ import process from "node:process";
 import { serve } from "@hono/node-server";
 import { log } from "@repo/logger";
 import { createApp } from "./app";
+import { env } from "./env";
 
-const port = process.env.PORT! || "5001";
+const port = env.PORT || 5001;
 const app = createApp();
 
 const server = serve({
   fetch: app.fetch,
-  port: parseInt(port, 10),
+  port: port,
 });
 
 log(`api running on ${port}`);
