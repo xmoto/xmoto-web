@@ -1,5 +1,5 @@
 {
-  "name": "kitchen-sink",
+  "name": "xmoto-web",
   "private": true,
   "scripts": {
     "build": "turbo run build",
