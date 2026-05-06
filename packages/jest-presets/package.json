@@ -2,7 +2,7 @@
   "name": "@repo/jest-presets",
   "version": "0.0.0",
   "private": true,
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "files": [
     "browser/jest-preset.ts",
     "node/jest-preset.ts"
