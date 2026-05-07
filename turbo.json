@@ -25,6 +25,12 @@
     "//#lint:fix": {
       "cache": false
     },
+    "//#db:up": {
+      "cache": false
+    },
+    "//#db:down": {
+      "cache": false
+    },
     "check-types": {
       "dependsOn": ["^build", "^check-types"]
     },
