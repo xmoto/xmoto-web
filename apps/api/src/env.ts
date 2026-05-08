@@ -3,7 +3,7 @@ import * as z from "zod";
 
 export const env = createEnv({
   server: {
-    PORT: z.number().min(0).max(65535),
+    PORT: z.coerce.number().min(0).max(65535),
   },
 
   runtimeEnv: process.env,
